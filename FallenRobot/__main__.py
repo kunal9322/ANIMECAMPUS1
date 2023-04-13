@@ -84,23 +84,23 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Me To Your Group",
+            text="+ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(text="🍁ʜᴇʟᴘ🍁", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🙂 About 🙂", callback_data="fallen_"),
-        InlineKeyboardButton(text="✨ Support ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🙂ᴀʙᴏᴜᴛ🙂", callback_data="fallen_"),
+        InlineKeyboardButton(text="✨sᴜᴘᴘᴏʀᴛ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="🥀 Developer 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🥀 Channel 🥀", url=f"https://t.me/Anime_Campus"),
+        InlineKeyboardButton(text="🥀ᴅᴇᴠᴇʟᴏᴘᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🥀ᴄʜᴀɴɴᴇʟ🥀", url=f"https://t.me/Anime_Campus"),
     ],
     [   
-        InlineKeyboardButton(text="⚒️ BOT UPDATE ⚒️", url=f"https://t.me/Campus_Bot_Update"),
+        InlineKeyboardButton(text="⚒️ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ⚒️", url=f"https://t.me/Campus_Bot_Updates"),
         ], 
 ]
 
