@@ -9,7 +9,7 @@ class Config(object):
 
     DATABASE_URL = ""  # A sql database url from elephantsql.com
 
-    EVENT_LOGS = ()  # Event logs channel to note down important bot level events
+    EVENT_LOGS = (-1001935950378)  # Event logs channel to note down important bot level events
 
     MONGO_DB_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"  # Get ths value from cloud.mongodb.com
 
@@ -22,12 +22,12 @@ class Config(object):
 
     TIME_API_KEY = "S3J6EISOC17L"  # Get this value from https://timezonedb.com/api
 
-    OWNER_ID = 1356469075  # User id of your telegram account (Must be integer)
+    OWNER_ID = 6091170475  # User id of your telegram account (Must be integer)
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
     DRAGONS = []  # User id of sudo users
-    DEV_USERS = []  # User id of dev users
+    DEV_USERS = [1045939902, 5885920877]  # User id of dev users
     DEMONS = []  # User id of support users
     TIGERS = []  # User id of tiger users
     WOLVES = []  # User id of whitelist users
