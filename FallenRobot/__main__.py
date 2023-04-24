@@ -71,8 +71,10 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+START_PIC = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"
+
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*ʜᴇʏ* {}, [🥀]({})
 
 *๏ ᴛʜɪs ɪs* {} !
 ➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
@@ -211,7 +213,7 @@ def start(update: Update, context: CallbackContext):
                 "CAACAgUAAx0CVp075gABQuixZEVjdtqH38kjZygbvyXEZi5wrcAAAr0IAAK3uClW2sDBgkGDbw8eBA"
             )
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                PM_START_TEXT.format(escape_markdown(first_name), START_PIC, BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -219,7 +221,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -427,11 +429,10 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     elif query.data == "fallen_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+            PM_START_TEXT.format(escape_markdown(first_name), START_PIC, BOT_NAME),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
-            disable_web_page_preview=True,
         )
 
 
@@ -466,11 +467,10 @@ def Source_about_callback(update: Update, context: CallbackContext):
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+            PM_START_TEXT.format(escape_markdown(first_name), START_PIC, BOT_NAME),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
-            disable_web_page_preview=True,
         )
 
 
