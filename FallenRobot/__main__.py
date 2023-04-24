@@ -94,16 +94,15 @@ buttons = [
         InlineKeyboardButton(text="🍁ʜᴇʟᴘ🍁", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🙂ᴀʙᴏᴜᴛ🙂", callback_data="fallen_"),
+        InlineKeyboardButton(text="🥀ᴄʜᴀɴɴᴇʟ🥀", url=f"https://t.me/Anime_Campus"),
         InlineKeyboardButton(text="✨sᴜᴘᴘᴏʀᴛ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="🥀ᴅᴇᴠᴇʟᴏᴘᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🥀ᴄʜᴀɴɴᴇʟ🥀", url=f"https://t.me/Anime_Campus"),
+        
+        
     ],
     [   
-        InlineKeyboardButton(text="⚒️ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ⚒️", url=f"https://t.me/Campus_Bot_Updates"),
-        ], 
+                ], 
 ]
 
 HELP_STRINGS = f"""
