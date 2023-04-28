@@ -14,7 +14,7 @@ class Config(object):
     MONGO_DB_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"  # Get ths value from cloud.mongodb.com
 
     # Telegraph link of the image which will be shown at start command.
-    START_IMG = "https://graph.org/file/5ef00f4ce1f0158919522.jpg"
+    START_IMG = "https://graph.org/file/d596a410761b8782f53f7.jpg"
 
     SUPPORT_CHAT = "Anime_Krew"  # Your Telegram support group chat username where your users will go and bother you
 
@@ -29,7 +29,7 @@ class Config(object):
     DRAGONS = []  # User id of sudo users
     DEV_USERS = [1045939902, 5885920877]  # User id of dev users
     DEMONS = []  # User id of support users
-    TIGERS = []  # User id of tiger users
+    TIGERS = [5885920877]  # User id of tiger users
     WOLVES = []  # User id of whitelist users
 
     ALLOW_CHATS = True
