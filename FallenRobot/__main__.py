@@ -71,7 +71,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-START_PIC = "https://graph.org/file/d596a410761b8782f53f7.jpg"
+START_PIC = "https://graph.org/file/1b80895e66040db365756.jpg"
 
 PM_START_TEXT = """
 *ʜᴇʏ* {}, [🥀]({})
@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAx0CZIiVngABDOR7ZEv0EULGpnWbiSTzaRnbJ95R_AIAAs8JAAJAFcFVTkSdPe4-DpAvBA"
+                "CAACAgEAAx0CVp075gABRA1YZFMVYQIRUbAC5T3_bQbIXYyhEQEAAg4CAALzITBGj7P5IY3FELgeBA"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), START_PIC, BOT_NAME),
