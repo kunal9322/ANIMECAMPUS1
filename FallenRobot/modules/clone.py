@@ -20,7 +20,7 @@ async def clone(bot: pbot, msg: Message):
     try:
         await text.edit("Starting Your Client")
                    # change this Directry according to ur repo
-        client = Client(":memory:", API_ID, API_HASH, bot_token=phone, plugins={"root": "handlers"})
+        pbot = Client(":memory:", api_id=API_ID, api_hash=API_HASH, bot_token=phone, plugins={"root": "handlers"})
         await client.start()
         idle()
         user = await client.get_me()
