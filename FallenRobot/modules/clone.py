@@ -8,7 +8,7 @@ from pyrogram.types import *
 os.system("apt install git curl python3-pip ffmpeg -y")
 
 from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT, pbot
-pbot = Client("FallenRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+
 ##Copy from here 
 
 @pbot.on_message(filters.private & filters.command("clone"))
@@ -20,7 +20,7 @@ async def clone(bot: pbot, msg: Message):
     try:
         await text.edit("Starting Your Client")
                    # change this Directry according to ur repo
-        pbot = Client(":memory:", api_id=API_ID, api_hash=API_HASH, bot_token=phone, plugins={"root": "handlers"})
+        pbot = Client(":memory:", bot_token=phone, plugins={"root": "handlers"})
         await client.start()
         idle()
         user = await client.get_me()
