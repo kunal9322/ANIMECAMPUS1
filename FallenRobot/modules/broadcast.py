@@ -9,7 +9,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 #REPO => Your Bots File Name
-import FallenRonot.modules.sql.users_sql as sql
+import FallenRobot.modules.sql.users_sql as sql
 from FallenRobot import DEV_USERS, OWNER_ID, pbot as pgram
 from FallenRobot.modules.sql.users_sql import get_all_users
 
