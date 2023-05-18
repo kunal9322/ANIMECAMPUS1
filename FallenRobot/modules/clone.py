@@ -12,7 +12,7 @@ from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHA
 ##Copy from here 
 
 @pbot.on_message(filters.private & filters.command("clone"))
-async def clone(bot: CLONE, msg: Message):
+async def clone(bot: pbot, msg: Message):
     chat = msg.chat
     text = await msg.reply("Usage:\n\n /clone token")
     cmd = msg.command
