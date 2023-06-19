@@ -102,7 +102,7 @@ async def cloned_count(client, message):
         bot_usernames_text = '\n'.join(bot_usernames)
         await message.reply_text(f"{count} bots have been cloned:\n\n{bot_usernames_text}")
 
-@Client.on_message(filters.command(["removebot"]) & filters.user(ADMINS))
+@Client.on_message(filters.command(["removebot"]) & filters.user(DRAGONS))
 async def remove_bot(client: Client, message: Message):
     bot_username = message.text.split(" ", maxsplit=1)[1].strip()
     bot_data = mongo_db.bots.find_one_and_delete({"username": bot_username})
