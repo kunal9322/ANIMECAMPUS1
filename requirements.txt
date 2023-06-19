@@ -32,7 +32,6 @@ pydictionary==2.0.1
 pykeyboard==0.1.5
 pynewtonmath==1.0.1
 pyrate-limiter==2.10.0
-pyrogram==2.0.103
 python-telegram-bot==12.8
 regex==2023.3.23
 requests==2.28.2
@@ -44,3 +43,5 @@ telegraph==2.2.0
 telethon==1.27.0
 tgcrypto==1.2.5
 wikipedia==1.4.0
+pyrogram==1.4.0
+pymongo==3.12.0
