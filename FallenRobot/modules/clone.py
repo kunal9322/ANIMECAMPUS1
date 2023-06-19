@@ -90,7 +90,7 @@ async def cloned_bots_list(client, message):
 @Client.on_message(filters.command('cloned_count') & filters.private)
 async def cloned_count(client, message):
     user_id = message.from_user.id
-    if user_id not in ADMINS:
+    if user_id not in DRAGONS:
         await message.reply_text("𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚃𝚘 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍.")
         return
     cloned_bots = mongo_db.bots.find()
@@ -152,7 +152,7 @@ async def restart_bots():
             logging.exception(f"Error while restarting bot with token {bot_token}: {e}")
     #logging.info("All bots restarted.")
 
-@Client.on_message(filters.command("restartall") & filters.user(ADMINS))
+@Client.on_message(filters.command("restartall") & filters.user(DRAGONS))
 async def on_restart_all_bots(client: Client, message: Message):
     logging.info("Received restart command.")
     await message.reply_text("ʀᴇꜱᴛᴀʀᴛɪɴɢ ᴀʟʟ ʙᴏᴛꜱ....🏹")
